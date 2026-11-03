@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#09070b">
+<meta name="description" content="FAR AWAY RECORDS — Independent music. Outside the ordinary.">
+<title>FAR AWAY RECORDS — Independent Music</title>
+<style>
+:root{--bg:#09070b;--panel:#110d14;--pink:#ff2dbb;--pink2:#ff72d5;--muted:#a79aa8;--line:rgba(255,45,187,.24);--white:#f7f1f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,Helvetica,sans-serif;letter-spacing:.01em}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 80% 12%,rgba(255,45,187,.12),transparent 32%),radial-gradient(ellipse at 10% 70%,rgba(104,31,95,.12),transparent 38%),linear-gradient(180deg,#09070b,#0b080e 65%,#080609)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font-size:16px;font-weight:900;letter-spacing:.19em}.brand span{color:var(--pink)}
+nav{display:flex;gap:27px;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#c9bdc9}nav a:hover,.textlink:hover{color:var(--pink)}
+.menu{display:none;background:none;color:white;border:1px solid var(--line);padding:9px 12px}
+.hero{min-height:660px;display:flex;flex-direction:column;justify-content:center;position:relative;padding:90px 0 80px;overflow:hidden}
+.kicker{color:var(--pink);font-size:10px;letter-spacing:.32em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.kicker:before{content:"";width:34px;height:1px;background:var(--pink);box-shadow:0 0 10px var(--pink)}
+h1{font-size:clamp(58px,11vw,132px);line-height:.83;letter-spacing:-.075em;margin:30px 0 26px;font-weight:950;text-transform:uppercase;max-width:900px}
+h1 .outline{color:transparent;-webkit-text-stroke:1px var(--pink);text-shadow:0 0 26px rgba(255,45,187,.17)}
+.lead{max-width:460px;color:#b9acbb;line-height:1.8;font-size:14px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 20px;border:1px solid var(--pink);font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;transition:.2s}.btn.primary{background:var(--pink);color:#140711;box-shadow:0 0 24px rgba(255,45,187,.22)}.btn:hover{transform:translateY(-2px);box-shadow:0 0 26px rgba(255,45,187,.28)}
+.hero-mark{position:absolute;right:-55px;top:120px;width:min(43vw,500px);aspect-ratio:1;border:1px solid rgba(255,45,187,.22);border-radius:50%;display:grid;place-items:center;transform:rotate(-18deg);opacity:.8}
+.hero-mark:before,.hero-mark:after{content:"";position:absolute;border:1px solid rgba(255,45,187,.18);border-radius:50%;inset:10%}
+.hero-mark:after{inset:23%;border-color:rgba(255,45,187,.3);box-shadow:0 0 55px rgba(255,45,187,.1)}
+.marktype{font-size:clamp(50px,8vw,100px);font-weight:950;letter-spacing:-.12em;color:rgba(255,45,187,.08);text-shadow:0 0 1px var(--pink);transform:rotate(18deg)}
+section{padding:92px 0;border-top:1px solid var(--line)}.section-top{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:38px}
+.eyebrow{font-size:10px;color:var(--pink);letter-spacing:.28em;text-transform:uppercase}h2{font-size:clamp(34px,6vw,64px);line-height:.95;letter-spacing:-.06em;margin:13px 0 0;text-transform:uppercase}
+.muted{color:var(--muted);font-size:13px;line-height:1.8;max-width:380px}
+.artist{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid var(--line);background:linear-gradient(120deg,rgba(255,45,187,.08),rgba(255,255,255,.015));min-height:330px}
+.artist-art{position:relative;overflow:hidden;min-height:300px;background:radial-gradient(circle at 50% 48%,rgba(255,45,187,.24),transparent 28%),linear-gradient(135deg,#17101a,#070609)}
+.artist-art:before{content:"";position:absolute;inset:12%;border:1px solid rgba(255,45,187,.3);transform:rotate(45deg)}
+.artist-art:after{content:"KDB0";position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(55px,10vw,120px);font-weight:950;letter-spacing:-.1em;color:rgba(255,255,255,.07);text-shadow:0 0 35px rgba(255,45,187,.25)}
+.artist-info{padding:clamp(28px,5vw,58px);display:flex;flex-direction:column;justify-content:center}.artist-info h3{font-size:48px;letter-spacing:-.07em;margin:10px 0}.tag{font-size:9px;letter-spacing:.22em;color:var(--pink);text-transform:uppercase}
+.streams{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.stream{border:1px solid rgba(255,255,255,.2);padding:12px 15px;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.stream:hover{border-color:var(--pink);color:var(--pink)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{min-height:190px;padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#17101a,#0c090f);display:flex;flex-direction:column;justify-content:space-between}.tile b{font-size:22px;letter-spacing:-.04em}.tile p{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:0}.num{color:var(--pink);font-size:10px;letter-spacing:.2em}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.quote{font-size:clamp(27px,4vw,44px);line-height:1.05;letter-spacing:-.055em}.quote em{font-style:normal;color:var(--pink)}
+.contactbox{border:1px solid var(--pink);padding:clamp(28px,5vw,55px);background:radial-gradient(ellipse at 90% 0%,rgba(255,45,187,.12),transparent 55%),#100b12}
+footer{padding:28px 0 40px;color:#766b78;font-size:9px;letter-spacing:.17em;text-transform:uppercase;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:720px){nav{display:none;position:absolute;top:81px;left:0;right:0;background:#0c080f;padding:22px;width:100%;flex-direction:column;z-index:4;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.hero{min-height:590px;padding:80px 0}.hero-mark{right:-180px;top:170px;width:440px;opacity:.38}.artist{grid-template-columns:1fr}.artist-art{min-height:230px}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr;gap:25px}.section-top{display:block}.section-top .muted{margin-top:18px}section{padding:70px 0}footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="brand" href="#top">FAR AWAY <span>RECORDS</span></a><nav id="nav"><a href="#artists">Artists</a><a href="#releases">Releases</a><a href="#about">About</a><a href="#contact">Contact</a></nav><button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">MENU</button></header>
+<main id="top">
+<div class="hero"><div class="hero-mark"><div class="marktype">FAR<br>AWAY</div></div><div class="kicker">Independent record label · 2026</div><h1>OUTSIDE<br><span class="outline">THE</span> ORDINARY.</h1><p class="lead">A home for uncompromising sound and creative vision. Independent by nature. Different by design.</p><div class="actions"><a class="btn primary" href="#artists">Discover artists ↗</a><a class="btn" href="#contact">Get in touch</a></div></div>
+<section id="artists"><div class="section-top"><div><div class="eyebrow">01 / The roster</div><h2>Our artist</h2></div><p class="muted">The voices and visions shaping the sound of FAR AWAY RECORDS.</p></div><article class="artist"><div class="artist-art" role="img" aria-label="Abstract FAR AWAY RECORDS artist artwork"></div><div class="artist-info"><div class="tag">Artist · Label owner</div><h3>KDB0</h3><p class="muted">Music without borders. Explore the latest releases and follow the sound.</p><div class="streams"><a class="stream" href="https://open.spotify.com/artist/5rhoiLY9TcyV8VTDltp2Q9?si=AkfGevTeTWmWwVz_6Sa4ZA&utm_source=copy-link" target="_blank" rel="noopener">Spotify ↗</a><a class="stream" href="https://music.apple.com/" target="_blank" rel="noopener">Apple Music ↗</a></div></div></article></section>
+<section id="releases"><div class="section-top"><div><div class="eyebrow">02 / Out now & next</div><h2>Releases</h2></div><p class="muted">New sounds. New perspectives. This space is ready for your singles, EPs and albums.</p></div><div class="grid"><div class="tile"><span class="num">01 / MUSIC</span><div><b>Latest releases</b><p>Discover the newest music from the FAR AWAY roster.</p></div></div><div class="tile"><span class="num">02 / PROJECTS</span><div><b>Albums & EPs</b><p>Full-length visions and carefully curated projects.</p></div></div><div class="tile"><span class="num">03 / NEXT UP</span><div><b>Coming soon</b><p>Stay close. More announcements are on the way.</p></div></div></div></section>
+<section id="about"><div class="about"><div><div class="eyebrow">03 / Who we are</div><h2>Far from<br>the usual.</h2></div><div><p class="quote">“Independent music. <em>Unfiltered vision.</em> No boundaries.”</p><p class="muted">FAR AWAY RECORDS is an independent label led by KDB0. Built around individuality, experimentation and a commitment to music that moves differently.</p></div></div></section>
+<section id="contact"><div class="contactbox"><div class="eyebrow">04 / Contact & submissions</div><h2>Make<br>something move.</h2><p class="muted">For business inquiries, collaborations, features and demos, get in touch with the label.</p><div class="actions"><a class="btn primary" href="mailto:contact@farawayrecords.com?subject=FAR%20AWAY%20RECORDS%20Inquiry">Email the label ↗</a><a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></div><p class="muted" style="font-size:10px;margin-top:22px">Replace the sample contact and social links with your official accounts before publishing.</p></div></section>
+</main>
+<footer><span>© 2026 FAR AWAY RECORDS</span><span>Independent by nature · Different by design</span><a href="#top">Back to top ↑</a></footer>
+</div>
+</body></html>
